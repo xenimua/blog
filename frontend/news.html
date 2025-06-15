@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Новости | Xpage</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+  <header class="header" data-js-header>
+    <div class="header__promo">
+      <div class="header__promo-inner container">
+        <a class="header__promo-link" href="/">
+          <span class="icon icon--yellow-arrow">Подпишитесь на нашу рассылку, чтобы узнавать первыми о наших новостях</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__body">
+      <div class="header__body-inner container">
+        <a
+          class="header__logo logo"
+          href="/"
+          aria-label="Home"
+          title="Home"
+        >
+          <img
+            class="logo__image"
+            src="./images/logo.svg"
+            alt=""
+            width="104" height="26"
+          />
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./index.html">Главная</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./blog.html">Блог</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link is-active" href="./news.html">Новости</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./podcasts.html">Подкасты</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./resources.html">Ресурсы</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__contact-us-link button button--accent" href="./contacts.html">
+            Оставить заявку
+          </a>
+        </div>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-alt" aria-labelledby="news-title">
+      <header class="hero-alt__header">
+        <div class="hero-alt__header-inner container">
+          <h1 class="hero-alt__title" id="news-title">
+            Новости: Оставайтесь всегда <span class="hero-alt__title-hidden-part">в курсе событий</span>
+          </h1>
+          <p class="hero-alt__subtitle h1 hidden-mobile" aria-hidden="true">
+            в курсе событий
+          </p>
+          <p class="hero-alt__description">Изучите последние новости со всего мира. Мы предоставляем вам самую свежую информацию о наиболее значимых событиях, тенденциях и историях. </p>
+        </div>
+      </header>
+      <div class="hero-alt__body">
+        <ul class="list">
+          <li class="list__item">
+            <article class="news-card container">
+              <img
+                class="news-card__image"
+                src="./images/news/1.jpg"
+                alt=""
+                width="515" height="427" loading="lazy"
+              />
+              <div class="news-card__body">
+                <h3 class="news-card__title">Глобальный климатический саммит </h3>
+                <div class="news-card__description">
+                  <p>Мировые лидеры собрались на Глобальном климатическом саммите, чтобы обсудить неотложные меры по борьбе с изменением климата, сокращению выбросов и целевые показатели использования возобновляемых источников энергии.</p>
+                </div>
+              </div>
+              <div class="news-card__summary summary">
+                <dl class="summary__list">
+                  <div class="summary__item">
+                    <dt class="summary__key">Категория</dt>
+                    <dd class="summary__value">Экология</dd>
+                  </div>
+                  <div class="summary__item">
+                    <dt class="summary__key">Дата публикации</dt>
+                    <dd class="summary__value">
+                      <time datetime="2025-10-05">10 мая, 2025</time>
+                    </dd>
+                  </div>
+                  <div class="summary__item">
+                    <dt class="summary__key">Автор</dt>
+                    <dd class="summary__value">Евгений Симонов</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="news-card__controls">
+                <div class="news-card__actions blog-actions">
+                  <ul class="blog-actions__list">
+                    <li class="blog-actions__item">
+                      <button
+                        class="blog-actions__button"
+                        type="button"
+                        aria-label="Like"
+                        title="Like"
+                      >
+                        <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                        <span>2.2k</span>
+                      </button>
+                    </li>
+                    <li class="blog-actions__item">
+                      <button
+                        class="blog-actions__button"
+                        type="button"
+                        aria-label="Share"
+                        title="Share"
+                      >
+                        <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                        <span>60</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <a class="news-card__link button" href="/">Читать далее</a>
+              </div>
+            </article>
+          </li>
+          <li class="list__item">
+            <div class="news container">
+              <ul class="news__list">
+                <li class="news__item">
+                  <article class="news-card">
+                    <img
+                      class="news-card__image"
+                      src="./images/news/2.jpg"
+                      alt=""
+                      width="512" height="222" loading="lazy"
+                    />
+                    <div class="news-card__body">
+                      <h7 class="news-card__title h7">Решительная победа прогрессивной политики</h7>
+                      <div class="news-card__description">
+                        <p>Политика</p>
+                      </div>
+                    </div>
+                    <div class="news-card__controls">
+                      <div class="news-card__actions blog-actions">
+                        <ul class="blog-actions__list">
+                          <li class="blog-actions__item">
+                            <button
+                              class="blog-actions__button"
+                              type="button"
+                              aria-label="Like"
+                              title="Like"
+                            >
+                        <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                              <span>6k</span>
+                            </button>
+                          </li>
+                          <li class="blog-actions__item">
+                            <button
+                              class="blog-actions__button"
+                              type="button"
+                              aria-label="Share"
+                              title="Share"
+                            >
+                        <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                              <span>92</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <a class="news-card__link button" href="/">
+                        <span class="icon icon--yellow-arrow">Читать далее</span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+                <li class="news__item">
+                  <article class="news-card">
+                    <img
+                      class="news-card__image"
+                      src="./images/news/3.jpg"
+                      alt=""
+                      width="512" height="222" loading="lazy"
+                    />
+                    <div class="news-card__body">
+                      <h7 class="news-card__title h7">Передовые инновации в области ИИ</h7>
+                      <div class="news-card__description">
+                        <p>Технологии</p>
+                      </div>
+                    </div>
+                    <div class="news-card__controls">
+                      <div class="news-card__actions blog-actions">
+                        <ul class="blog-actions__list">
+                          <li class="blog-actions__item">
+                            <button
+                              class="blog-actions__button"
+                              type="button"
+                              aria-label="Like"
+                              title="Like"
+                            >
+                        <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                              <span>10k</span>
+                            </button>
+                          </li>
+                          <li class="blog-actions__item">
+                            <button
+                              class="blog-actions__button"
+                              type="button"
+                              aria-label="Share"
+                              title="Share"
+                            >
+                        <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                              <span>124</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <a class="news-card__link button" href="/">
+                        <span class="icon icon--yellow-arrow">Читать далее</span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+                <li class="news__item">
+                  <article class="news-card">
+                    <img
+                      class="news-card__image"
+                      src="./images/news/4.jpg"
+                      alt=""
+                      width="512" height="222" loading="lazy"
+                    />
+                    <div class="news-card__body">
+                      <h7 class="news-card__title h7">Разновидности COVID-19</h7>
+                      <div class="news-card__description">
+                        <p>Здоровье</p>
+                      </div>
+                    </div>
+                    <div class="news-card__controls">
+                      <div class="news-card__actions blog-actions">
+                        <ul class="blog-actions__list">
+                          <li class="blog-actions__item">
+                            <button
+                              class="blog-actions__button"
+                              type="button"
+                              aria-label="Like"
+                              title="Like"
+                            >
+                        <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                              <span>14k</span>
+                            </button>
+                          </li>
+                          <li class="blog-actions__item">
+                            <button
+                              class="blog-actions__button"
+                              type="button"
+                              aria-label="Share"
+                              title="Share"
+                            >
+                        <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                              <span>204</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <a class="news-card__link button" href="/">
+                        <span class="icon icon--yellow-arrow">Читать далее</span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="news-tabs-title">
+      <header class="section__header">
+        <div class="section__header-inner container">
+          <div class="section__header-info">
+            <p class="section__subtitle tag">Добро пожаловать в наш новостной центр</p>
+            <h2 class="section__title" id="news-tabs-title">Откройте для себя мир газетных <br/>заголовков</h2>
+          </div>
+          <div class="section__actions">
+            <a class="section__link button" href="./news.html">
+              <span class="icon icon--yellow-arrow">Посмотреть все новости</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="section__body tabs" data-js-tabs>
+        <h3 class="visually-hidden" id="blog-category-title">
+          Blog category
+        </h3>
+        <header class="tabs__header">
+          <div
+            class="tabs__buttons container"
+            role="tablist"
+            aria-labelledby="blog-category-title"
+          >
+            <button
+              class="tabs__button is-active"
+              id="tab-1"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-1"
+              data-js-tabs-button
+              aria-selected="true"
+            >
+              Все
+            </button>
+            <button
+              class="tabs__button"
+              id="tab-2"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-2"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Технологии
+            </button>
+            <button
+              class="tabs__button"
+              id="tab-3"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-3"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Политика
+            </button>
+            <button
+              class="tabs__button"
+              id="tab-4"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-4"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Здоровье
+            </button>
+            <button
+              class="tabs__button"
+              id="tab-5"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-5"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Экология
+            </button>
+            <button
+              class="tabs__button"
+              id="tab-6"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-6"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Спорт
+            </button>
+          </div>
+        </header>
+        <div class="tabs__body">
+          <div
+            class="tabs__content is-active"
+            id="tabpanel-1"
+            aria-labelledby="tab-1"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            <ul class="list">
+              <li class="list__item">
+                <article class="blog-card container">
+                  <div class="blog-card__author person-card">
+                    <img
+                      class="person-card__image"
+                      src="./images/blog/4.png"
+                      alt=""
+                      width="80" height="80" loading="lazy"
+                    />
+                    <div class="person-card__body">
+                      <p class="person-card__name">Алексей Правдов</p>
+                      <p class="person-card__department">Технологии</p>
+                    </div>
+                  </div>
+                  <div class="blog-card__body">
+                    <time class="blog-card__date h6" datetime="2025-06-15">15 июня, 2025</time>
+                    <div class="blog-card__info">
+                      <h4 class="blog-card__title">Технологические гиганты анонсируют новую линейку продуктов</h4>
+                      <div class="blog-card__description">
+                        <p>Ознакомьтесь с последними инновациями от лидеров технологической индустрии, представляющих новые продукты, которые обещают изменить цифровой ландшафт.</p>
+                      </div>
+                    </div>
+                    <div class="blog-card__actions blog-actions">
+                      <ul class="blog-actions__list">
+                        <li class="blog-actions__item">
+                          <button
+                            class="blog-actions__button is-active"
+                            type="button"
+                            aria-label="Dislike"
+                            title="Dislike"
+                          >
+                            <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>24.5k</span>
+                          </button>
+                        </li>
+                        <li class="blog-actions__item">
+                          <button
+                            class="blog-actions__button"
+                            type="button"
+                            aria-label="Discuss"
+                            title="Discuss"
+                          >
+                            <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>50</span>
+                          </button>
+                        </li>
+                        <li class="blog-actions__item">
+                          <button
+                            class="blog-actions__button"
+                            type="button"
+                            aria-label="Share"
+                            title="Share"
+                          >
+                            <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>20</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="blog-card__link button" href="/">
+                    <span class="icon icon--yellow-arrow">Читать далее</span>
+                  </a>
+                </article>
+              </li>
+              <li class="list__item">
+                <article class="blog-card container">
+                  <div class="blog-card__author person-card">
+                    <img
+                      class="person-card__image"
+                      src="./images/blog/5.png"
+                      alt=""
+                      width="80" height="80" loading="lazy"
+                    />
+                    <div class="person-card__body">
+                      <p class="person-card__name">София Эрих</p>
+                      <p class="person-card__department">Технологии</p>
+                    </div>
+                  </div>
+                  <div class="blog-card__body">
+                    <time class="blog-card__date h6" datetime="2025-06-11">11 июня, 2025</time>
+                    <div class="blog-card__info">
+                      <h4 class="blog-card__title">Будущее автономных автомобилей</h4>
+                      <div class="blog-card__description">
+                        <p>Глубокий анализ стремительного развития технологий автономных транспортных средств и их влияния на транспорт.</p>
+                      </div>
+                    </div>
+                    <div class="blog-card__actions blog-actions">
+                      <ul class="blog-actions__list">
+                        <li class="blog-actions__item">
+                          <button
+                            class="blog-actions__button"
+                            type="button"
+                            aria-label="Like"
+                            title="Like"
+                          >
+                            <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>32k</span>
+                          </button>
+                        </li>
+                        <li class="blog-actions__item">
+                          <button
+                            class="blog-actions__button"
+                            type="button"
+                            aria-label="Discuss"
+                            title="Discuss"
+                          >
+                            <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>72</span>
+                          </button>
+                        </li>
+                        <li class="blog-actions__item">
+                          <button
+                            class="blog-actions__button"
+                            type="button"
+                            aria-label="Share"
+                            title="Share"
+                          >
+                            <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>18</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="blog-card__link button" href="/">
+                    <span class="icon icon--yellow-arrow">Читать далее</span>
+                  </a>
+                </article>
+              </li>
+              <li class="list__item">
+                <article class="blog-card container">
+                  <div class="blog-card__author person-card">
+                    <img
+                      class="person-card__image"
+                      src="./images/blog/6.png"
+                      alt=""
+                      width="80" height="80" loading="lazy"
+                    />
+                    <div class="person-card__body">
+                      <p class="person-card__name">Андрей Лисицкий</p>
+                      <p class="person-card__department">Технологии</p>
+                    </div>
+                  </div>
+                  <div class="blog-card__body">
+                    <time class="blog-card__date h6" datetime="2025-06-10">10 июня, 2025</time>
+                    <div class="blog-card__info">
+                      <h4 class="blog-card__title">Технологические стартапы получают рекордное финансирование</h4>
+                      <div class="blog-card__description">
+                        <p>Обзор недавнего всплеска финансирования технологических стартапов, формирующего предпринимательский ландшафт.</p>
+                      </div>
+                    </div>
+                    <div class="blog-card__actions blog-actions">
+                      <ul class="blog-actions__list">
+                        <li class="blog-actions__item">
+                          <button
+                            class="blog-actions__button"
+                            type="button"
+                            aria-label="Like"
+                            title="Like"
+                          >
+                            <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>20k</span>
+                          </button>
+                        </li>
+                        <li class="blog-actions__item">
+                          <button
+                            class="blog-actions__button"
+                            type="button"
+                            aria-label="Discuss"
+                            title="Discuss"
+                          >
+                            <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>31</span>
+                          </button>
+                        </li>
+                        <li class="blog-actions__item">
+                          <button
+                            class="blog-actions__button"
+                            type="button"
+                            aria-label="Share"
+                            title="Share"
+                          >
+                            <span class="blog-actions__icon-wrapper">
+                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>12</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="blog-card__link button" href="/">
+                    <span class="icon icon--yellow-arrow">Читать далее</span>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="tabs__content"
+            id="tabpanel-2"
+            aria-labelledby="tab-2"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Ничего не найдено
+          </div>
+          <div
+            class="tabs__content"
+            id="tabpanel-3"
+            aria-labelledby="tab-3"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Ничего не найдено
+          </div>
+          <div
+            class="tabs__content"
+            id="tabpanel-4"
+            aria-labelledby="tab-4"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Ничего не найдено
+          </div>
+          <div
+            class="tabs__content"
+            id="tabpanel-5"
+            aria-labelledby="tab-5"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Ничего не найдено
+          </div>
+          <div
+            class="tabs__content"
+            id="tabpanel-6"
+            aria-labelledby="tab-6"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Ничего не найдено
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="videos-title">
+      <header class="section__header">
+        <div class="section__header-inner container">
+          <div class="section__header-info">
+            <p class="section__subtitle tag">Популярные видео</p>
+            <h2 class="section__title" id="videos-title">Визуальная информация <br/>для современного зрителя</h2>
+          </div>
+          <div class="section__actions">
+            <a class="section__link button" href="/">
+              <span class="icon icon--yellow-arrow">Смотреть все</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="section__body">
+        <ul class="bordered-grid bordered-grid--2-cols container">
+          <li class="bordered-grid__item">
+            <div class="video-card">
+              <div class="video-card__player video-player" data-js-video-player>
+                <video
+                  class="video-player__video"
+                  src="./videos/example.mp4"
+                  width="718" height="412"
+                  poster="./images/videos/poster-1.jpg"
+                  data-js-video-player-video
+                ></video>
+                <div class="video-player__panel is-active" data-js-video-player-panel>
+                  <button
+                    class="video-player__play-button"
+                    type="button"
+                    aria-label="Play video"
+                    title="Play video"
+                    data-js-video-player-play-button
+                  >
+                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625ZM25.125 17.0537C22.9379 15.8387 20.25 17.42 20.25 19.9219V38.0791C20.2502 40.5808 22.9381 42.1621 25.125 40.9473L41.4668 31.8691C43.7168 30.619 43.7167 27.3821 41.4668 26.1318L25.125 17.0537Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <div class="video-player__duration">2.30 min</div>
+                </div>
+              </div>
+              <div class="video-card__body">
+                <h3 class="video-card__title h4">Исследование Марса: Открытие инопланетных ландшафтов</h3>
+                <div class="video-card__description">
+                  <p>Отправляйтесь в путешествие по захватывающим дух пейзажам Красной планеты и раскройте тайны Марса.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="bordered-grid__item">
+            <div class="video-card">
+              <div class="video-card__player video-player" data-js-video-player>
+                <video
+                  class="video-player__video"
+                  src="./videos/example.mp4"
+                  width="718" height="412"
+                  poster="./images/videos/poster-2.jpg"
+                  data-js-video-player-video
+                ></video>
+                <div class="video-player__panel is-active" data-js-video-player-panel>
+                  <button
+                    class="video-player__play-button"
+                    type="button"
+                    aria-label="Play video"
+                    title="Play video"
+                    data-js-video-player-play-button
+                  >
+                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625ZM25.125 17.0537C22.9379 15.8387 20.25 17.42 20.25 19.9219V38.0791C20.2502 40.5808 22.9381 42.1621 25.125 40.9473L41.4668 31.8691C43.7168 30.619 43.7167 27.3821 41.4668 26.1318L25.125 17.0537Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <div class="video-player__duration">2.30 min</div>
+                </div>
+              </div>
+              <div class="video-card__body">
+                <h3 class="video-card__title h4">Blockchain Explained: Революция в финансах</h3>
+                <div class="video-card__description">
+                  <p>Окунитесь в мир технологии блокчейн и ее преобразующего влияния на финансовую отрасль.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="bordered-grid__item">
+            <div class="video-card">
+              <div class="video-card__player video-player" data-js-video-player>
+                <video
+                  class="video-player__video"
+                  src="./videos/example.mp4"
+                  width="718" height="412"
+                  poster="./images/videos/poster-3.jpg"
+                  data-js-video-player-video
+                ></video>
+                <div class="video-player__panel is-active" data-js-video-player-panel>
+                  <button
+                    class="video-player__play-button"
+                    type="button"
+                    aria-label="Play video"
+                    title="Play video"
+                    data-js-video-player-play-button
+                  >
+                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625ZM25.125 17.0537C22.9379 15.8387 20.25 17.42 20.25 19.9219V38.0791C20.2502 40.5808 22.9381 42.1621 25.125 40.9473L41.4668 31.8691C43.7168 30.619 43.7167 27.3821 41.4668 26.1318L25.125 17.0537Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <div class="video-player__duration">2.30 min</div>
+                </div>
+              </div>
+              <div class="video-card__body">
+                <h3 class="video-card__title h4">Осведомленность о психическом здоровье на рабочем месте</h3>
+                <div class="video-card__description">
+                  <p>Исследование важности осведомленности о психическом здоровье и инициатив по изменению рабочих мест для обеспечения благополучия сотрудников.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="bordered-grid__item">
+            <div class="video-card">
+              <div class="video-card__player video-player" data-js-video-player>
+                <video
+                  class="video-player__video"
+                  src="./videos/example.mp4"
+                  width="718" height="412"
+                  poster="./images/videos/poster-4.jpg"
+                  data-js-video-player-video
+                ></video>
+                <div class="video-player__panel is-active" data-js-video-player-panel>
+                  <button
+                    class="video-player__play-button"
+                    type="button"
+                    aria-label="Play video"
+                    title="Play video"
+                    data-js-video-player-play-button
+                  >
+                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29 0.5625C44.7056 0.5625 57.4375 13.2944 57.4375 29C57.4375 44.7056 44.7056 57.4375 29 57.4375C13.2944 57.4375 0.5625 44.7056 0.5625 29C0.5625 13.2944 13.2944 0.5625 29 0.5625ZM25.125 17.0537C22.9379 15.8387 20.25 17.42 20.25 19.9219V38.0791C20.2502 40.5808 22.9381 42.1621 25.125 40.9473L41.4668 31.8691C43.7168 30.619 43.7167 27.3821 41.4668 26.1318L25.125 17.0537Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <div class="video-player__duration">2.30 min</div>
+                </div>
+              </div>
+              <div class="video-card__body">
+                <h3 class="video-card__title h4">Революционные инвестиционные стратегии</h3>
+                <div class="video-card__description">
+                  <p>Подробный обзор глобальных усилий по сохранению биоразнообразия и защите исчезающих видов от вымирания.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <div class="about__inner container">
+        <header class="about__header">
+          <img
+            class="about__icon"
+            src="./images/about/icon.svg"
+            alt=""
+            width="150" height="150" loading="lazy"
+          />
+          <div class="about__info">
+            <p class="about__subtitle tag">Учитесь, общайтесь и внедряйте инновации</p>
+            <h2 class="about__title" id="about-title">Станьте частью будущей технологической революции</h2>
+          </div>
+          <div class="about__description">
+            <p>Погрузитесь в мир технологий будущего. Изучите наши обширные ресурсы, общайтесь с коллегами-энтузиастами технологий и продвигайте инновации в отрасли. Присоединяйтесь к динамичному сообществу передовых мыслителей.</p>
+          </div>
+        </header>
+        <ul class="about__list">
+          <li class="about__item">
+            <a class="about-card tile" href="/">
+              <h6 class="about-card__title circle-icon">Доступ к ресурсам</h6>
+              <div class="about-card__description">
+                <p>Посетители могут получить доступ к широкому спектру ресурсов, включая электронные книги, технические описания, отчеты.</p>
+              </div>
+            </a>
+          </li>
+          <li class="about__item">
+            <a class="about-card tile" href="/">
+              <h6 class="about-card__title circle-icon">Форум сообщества</h6>
+              <div class="about-card__description">
+                <p>Присоединяйтесь к нашему активному форуму сообщества, чтобы обсудить тенденции в отрасли и обменяться мнениями.</p>
+              </div>
+            </a>
+          </li>
+          <li class="about__item">
+            <a class="about-card tile" href="/">
+              <h6 class="about-card__title circle-icon">Технологические события</h6>
+              <div class="about-card__description">
+                <p>Будьте в курсе предстоящих технологических мероприятий, вебинаров и конференций, чтобы расширить свои знания.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__body">
+        <nav class="footer__menu">
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="/">Главная</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Описание</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Блог</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Ресурсы</a>
+                <span class="badge">New</span>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Отзывы</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Контакты</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Подписаться</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="/">Новости</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">В тренде</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Видеоролики</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Технологии</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Здоровье</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Политика</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Экология</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="/">Блог</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Квантовые вычисления</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">AI Этика</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Исследование космоса</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Биотехнологии</a>
+                <span class="badge">New</span>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Возобновляемая энергия</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Биохакинг</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="/">Подкасты</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">AI Революция</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">AI Революция</a>
+                <span class="badge">New</span>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">TechTalk AI</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">AI Беседы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="/">Ресурсы</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link button" href="/">
+                  <span class="icon icon--yellow-arrow">Белая книга</span>
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link button" href="/">
+                  <span class="icon icon--yellow-arrow">Электронные книги</span>
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link button" href="/">
+                  <span class="icon icon--yellow-arrow">Доклады</span>
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link button" href="/">
+                  <span class="icon icon--yellow-arrow">Научные работы</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__extra">
+        <div class="footer__extra-menu">
+          <ul class="footer__extra-menu-list">
+            <li class="footer__extra-menu-item">
+              <a class="footer__extra-menu-link" href="/">Условия и положения</a>
+            </li>
+            <li class="footer__extra-menu-item">
+              <a class="footer__extra-menu-link" href="/">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__soc1als soc1als">
+          <ul class="soc1als__list">
+            <li class="soc1als__item">
+              <a
+                class="soc1als__link"
+                href="/"
+                target="_blank"
+                aria-label="Telegram"
+                title="Telegram"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.4025 2.17876L0.676014 10.8468C0.521921 10.9088 0.390564 11.0184 0.30031 11.1605C0.210056 11.3026 0.165418 11.47 0.172629 11.6393C0.17984 11.8086 0.238538 11.9714 0.340527 12.1049C0.442516 12.2384 0.582698 12.3359 0.741469 12.3838L6.26149 14.0639L8.32113 20.766C8.37009 20.9259 8.45862 21.07 8.57823 21.1844C8.6978 21.2987 8.84424 21.3795 9.00338 21.4186C9.16248 21.4578 9.32873 21.4541 9.48604 21.4078C9.64331 21.3615 9.78617 21.2744 9.90076 21.1547L12.7589 18.1701L18.3575 22.379C18.5152 22.4977 18.6995 22.5739 18.8935 22.6007C19.0874 22.6275 19.2849 22.6041 19.4677 22.5325C19.6505 22.4609 19.8128 22.3435 19.9398 22.191C20.0669 22.0385 20.1544 21.8558 20.1946 21.6596L23.8993 3.50131C23.9403 3.29989 23.9275 3.09088 23.8622 2.89629C23.7969 2.7017 23.6817 2.52874 23.5284 2.39563C23.3752 2.26253 23.1897 2.1742 22.9916 2.13997C22.7934 2.10573 22.59 2.12686 22.4025 2.20111V2.17876ZM19.6797 6.20004L9.59967 15.3462C9.49874 15.4366 9.43486 15.5627 9.42072 15.6992L9.03236 19.2379C9.02747 19.2621 9.01464 19.2837 8.99596 19.2993C8.97724 19.3149 8.9539 19.3234 8.92981 19.3234C8.90577 19.3234 8.88242 19.3149 8.86375 19.2993C8.84507 19.2837 8.8322 19.2621 8.82726 19.2379L7.23022 13.9656C7.19448 13.8479 7.1978 13.7214 7.23964 13.6058C7.28149 13.4902 7.35947 13.3921 7.46149 13.3267L19.3786 5.76217C19.4364 5.71952 19.5085 5.70213 19.5788 5.71386C19.6492 5.72559 19.7122 5.76547 19.7539 5.82472C19.7955 5.88397 19.8125 5.95774 19.801 6.0298C19.7895 6.10186 19.7506 6.16633 19.6928 6.20898L19.6797 6.20004Z" fill="#1A1A1A"/>
+                </svg>
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a
+                class="soc1als__link"
+                href="/"
+                target="_blank"
+                aria-label="WhatsApp"
+                title="WhatsApp"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4048 9.24927C22.8019 6.6768 21.3472 4.38361 19.2769 2.74199C17.2065 1.10037 14.6422 0.206705 12 0.206055C11.2494 0.222866 10.5014 0.299913 9.76315 0.436454C7.96253 0.790543 6.27053 1.56348 4.824 2.69274C3.37747 3.82201 2.21706 5.27587 1.43661 6.93677C0.656167 8.59767 0.277608 10.419 0.33156 12.2533C0.385512 14.0876 0.870458 15.8835 1.74717 17.4957C1.8036 17.5792 1.84211 17.6735 1.86029 17.7726C1.87846 17.8717 1.8759 17.9736 1.85275 18.0717C1.30555 19.8573 0.801564 21.7053 0.316765 23.5101C0.235165 23.8317 0.235162 23.8317 0.537559 23.7453C2.45756 23.2317 4.31516 22.7469 6.21115 22.3053C6.27691 22.2731 6.34915 22.2563 6.42235 22.2563C6.4956 22.2563 6.56784 22.2731 6.63355 22.3053C8.62099 23.3364 10.8624 23.7764 13.0921 23.5729C15.3218 23.3694 17.4466 22.531 19.2145 21.1571C20.9824 19.7832 22.3194 17.9313 23.0672 15.8208C23.815 13.7103 23.9421 11.4298 23.4336 9.24927H23.4048ZM13.632 21.4989C13.1891 21.605 12.7328 21.6439 12.2784 21.6141C10.4283 21.6592 8.6016 21.1942 6.99835 20.2701C6.91579 20.2043 6.81787 20.1605 6.71376 20.1429C6.60965 20.1252 6.5028 20.1343 6.40315 20.1693C5.34235 20.4333 4.31037 20.7117 3.25917 20.9805C3.04317 21.0525 3.02396 21.0141 3.07196 20.7885C3.35036 19.8285 3.60956 18.8349 3.91676 17.8317C3.95718 17.7155 3.96691 17.5908 3.94505 17.4697C3.92319 17.3486 3.87046 17.2352 3.79196 17.1405C2.74516 15.5 2.21809 13.5817 2.27976 11.6366C2.34142 9.69159 2.98894 7.81051 4.13756 6.23967C6.61435 2.93726 10.008 1.56446 14.0448 2.42846C18.0816 3.29246 20.5728 5.85567 21.4752 9.81087C21.7721 11.0964 21.8022 12.4292 21.5634 13.7268C21.3246 15.0244 20.822 16.2592 20.0868 17.3548C19.3516 18.4504 18.3995 19.3835 17.2892 20.0963C16.1789 20.8091 14.9341 21.2864 13.632 21.4989Z" fill="#1A1A1A"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.048 17.4961C14.636 17.5217 14.2231 17.4646 13.8336 17.3281C11.2543 16.5429 9.01955 14.9023 7.49761 12.6769C6.8331 11.8783 6.36611 10.9344 6.13441 9.92167C6.00827 9.3533 6.03999 8.76131 6.22614 8.20965C6.41228 7.65803 6.74569 7.16781 7.19041 6.79207C7.41659 6.63947 7.67358 6.53848 7.94315 6.49615C8.21271 6.45386 8.48833 6.47128 8.75041 6.54727C8.85337 6.64307 8.94227 6.75295 9.01441 6.87367C9.34561 7.69927 9.70081 8.47207 10.0368 9.27367C10.0603 9.3532 10.0678 9.43658 10.0587 9.51899C10.0496 9.60141 10.0242 9.68119 9.98396 9.75367C9.78937 10.1041 9.54884 10.4269 9.26881 10.7137C9.21937 10.7493 9.17795 10.795 9.14718 10.8476C9.11641 10.9002 9.09702 10.9588 9.09025 11.0193C9.08348 11.0799 9.08943 11.1412 9.10782 11.1994C9.12615 11.2575 9.15644 11.3112 9.19681 11.3569C10.0936 12.928 11.5063 14.1406 13.1952 14.7889C13.2937 14.8465 13.4103 14.8647 13.5216 14.8397C13.633 14.8148 13.7307 14.7486 13.7952 14.6545C14.0976 14.3137 14.3904 13.9345 14.6688 13.5649C14.7384 13.4621 14.8431 13.3882 14.9634 13.3573C15.0836 13.3263 15.211 13.3404 15.3216 13.3969C15.8976 13.6657 16.4592 13.9345 17.0064 14.1841C17.16 14.2561 17.2704 14.3185 17.4048 14.3665C17.9808 14.6545 17.9808 14.6977 17.9136 15.3265C17.8368 16.5457 16.9008 17.1649 15.8256 17.4721C15.5703 17.5299 15.3063 17.538 15.048 17.4961Z" fill="#1A1A1A"/>
+                </svg>
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a
+                class="soc1als__link"
+                href="/"
+                target="_blank"
+                aria-label="VK"
+                title="VK"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.68707 1.68707C0 3.37413 0 6.0894 0 11.52V12.48C0 17.9106 0 20.6259 1.68707 22.313C3.37413 24 6.0894 24 11.52 24H12.48C17.9106 24 20.6259 24 22.313 22.313C24 20.6259 24 17.9106 24 12.48V11.52C24 6.0894 24 3.37413 22.313 1.68707C20.6259 0 17.9106 0 12.48 0H11.52C6.0894 0 3.37413 0 1.68707 1.68707ZM4.0498 7.2998C4.1798 13.5398 7.29976 17.2898 12.7698 17.2898H13.0799V13.7198C15.0899 13.9198 16.6097 15.3898 17.2197 17.2898H20.0598C19.2798 14.4498 17.2297 12.8798 15.9497 12.2798C17.2297 11.5398 19.0297 9.7398 19.4597 7.2998H16.8797C16.3197 9.2798 14.6599 11.0798 13.0799 11.2498V7.2998H10.4998V14.2198C8.89975 13.8198 6.8798 11.8798 6.7898 7.2998H4.0498Z" fill="#1A1A1A"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">© <time datetime="2025">2025</time> Xpage. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

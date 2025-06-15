@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.table-of-contents {
+  padding: rem(18);
+  color: var(--color-dark);
+  background-color: var(--color-dark-10);
+  border-radius: rem(12);
+
+  @include laptop {
+    border-radius: rem(10);
+  }
+
+  &__list {
+    display: grid;
+    row-gap: rem(14);
+
+    @include laptop {
+      row-gap: rem(10);
+    }
+  }
+
+  &__item {
+    list-style-type: disc;
+    margin-left: 1.5em;
+  }
+}

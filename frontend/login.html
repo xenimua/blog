@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Вход в аккаунт</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__body">
+      <div class="container header__body-inner">
+        <a href="/" class="header__logo logo">ARCHAKOV BLOG</a>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li><a href="register.html" class="button button--accent">Создать аккаунт</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card" style="max-width: 30rem; margin: 5rem auto; padding: 2rem; background-color: var(--color-dark-10); border-radius: 0.75rem;">
+        <h1 class="h3" style="text-align: center; margin-bottom: 2rem;">Вход в аккаунт</h1>
+        
+        <form action="/api/login" method="POST" class="field">
+          <label class="field">
+            <span>E-Mail</span>
+            <input type="email" name="email" class="field__control" placeholder="Введите e-mail" required />
+            <span class="field__error" style="color: var(--color-red); font-size: 0.875rem;">Неверно указана почта</span>
+          </label>
+
+          <label class="field" style="margin-top: 1.5rem;">
+            <span>Пароль</span>
+            <input type="password" name="password" class="field__control" placeholder="Введите пароль" required />
+          </label>
+
+          <button type="submit" class="button button--accent" style="margin-top: 2rem; width: 100%;">
+            Войти
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+<script type="module" src="./scripts/login.js"></script>

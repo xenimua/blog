@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Новая статья</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <main class="section">
+    <div class="container">
+      <div class="tile" style="max-width: 800px; margin: 0 auto;">
+        <h1 class="h3" style="text-align: center; margin-bottom: 2rem;">Создать новую статью</h1>
+
+        <form class="feedback-form" id="add-post-form" enctype="multipart/form-data">
+          <div class="feedback-form__cell--wide" style="margin-bottom: 1rem;">
+            <label class="button button--secondary" for="upload-input">
+              Загрузить превью
+            </label>
+            <input type="file" id="upload-input" name="image" accept="image/*" hidden />
+          </div>
+
+          <div id="image-preview" style="margin-bottom: 1rem;"></div>
+
+          <div class="field feedback-form__cell--wide">
+            <label for="title">Заголовок</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              class="field__control"
+              placeholder="Введите заголовок статьи"
+              required
+            />
+          </div>
+
+          <div class="field feedback-form__cell--wide">
+            <label for="tags">Теги (через запятую)</label>
+            <input
+              type="text"
+              id="tags"
+              name="tags"
+              class="field__control"
+              placeholder="например: react, js"
+            />
+          </div>
+
+          <div class="field feedback-form__cell--wide">
+            <label for="content">Текст статьи</label>
+            <textarea
+              id="content"
+              name="content"
+              class="field__control"
+              rows="10"
+              placeholder="Введите текст статьи..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="feedback-form__cell--wide" style="display: flex; gap: 1rem;">
+            <button type="submit" class="button button--accent">Опубликовать</button>
+            <a href="blog.html" class="button button--secondary">Отмена</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const uploadInput = document.getElementById('upload-input');
+    const imagePreview = document.getElementById('image-preview');
+
+    uploadInput.addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          imagePreview.innerHTML = `
+            <img src="${e.target.result}" alt="Превью" style="max-width:100%; margin-bottom: 1rem;" />
+            <button type="button" class="button button--secondary" onclick="removeImage()">Удалить изображение</button>
+          `;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    function removeImage() {
+      uploadInput.value = '';
+      imagePreview.innerHTML = '';
+    }
+  </script>
+</body>
+</html>
+<script type="module" src="./scripts/add-post.js"></script>
+

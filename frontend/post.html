@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Статья</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <main class="section">
+    <div class="container">
+      <div class="blog-details tile">
+        <div class="blog-details__top">
+          <h1 class="blog-details__title">Заголовок статьи</h1>
+          <div class="blog-details__meta">
+            <div class="avatar">
+              <img src="1.png" alt="Аватар автора" class="avatar__img" />
+              <div class="avatar__info">
+                <div class="avatar__name">Автор статьи</div>
+                <div class="avatar__date">12 июня 2025</div>
+              </div>
+            </div>
+            <div class="blog-details__tags">
+              <a href="#" class="blog-tag">#react</a>
+              <a href="#" class="blog-tag">#frontend</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-details__content">
+          <img src="image-1.jpg" alt="Превью" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 2rem;" />
+          <p>
+            Здесь будет основной текст статьи. Поддерживается форматирование, абзацы, цитаты, списки и изображения. <br />
+            Можно будет подставлять данные динамически через fetch.
+          </p>
+        </div>
+      </div>
+
+      <div class="tile" style="margin-top: 3rem;">
+        <h2 class="h4" style="margin-bottom: 1.5rem;">Комментарии</h2>
+
+        <div class="comments">
+          <div class="comment">
+            <div class="comment__avatar">
+              <img src="https://mui.com/static/images/avatar/1.jpg" alt="Аватар" />
+            </div>
+            <div class="comment__content">
+              <div class="comment__author">Вася Пупкин</div>
+              <div class="comment__text">Это тестовый комментарий к статье.</div>
+            </div>
+          </div>
+
+          <div class="comment">
+            <div class="comment__avatar">
+              <img src="https://mui.com/static/images/avatar/2.jpg" alt="Аватар" />
+            </div>
+            <div class="comment__content">
+              <div class="comment__author">Иван Иванов</div>
+              <div class="comment__text">Хорошая статья! Спасибо за полезный материал.</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="feedback-form" style="margin-top: 2rem;">
+          <div class="field feedback-form__cell--wide">
+            <label for="comment">Оставить комментарий</label>
+            <textarea id="comment" class="field__control" rows="4" placeholder="Ваш комментарий..." required></textarea>
+          </div>
+          <div class="feedback-form__cell--wide">
+            <button type="submit" class="button button--accent">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+<script type="module" src="./scripts/post.js"></script>
