@@ -8,9 +8,9 @@ import { handleValidationErrors, checkAuth } from './utils/index.js';
 import { UserController, PostController } from './controllers/index.js';
 
 mongoose
-.connect('mongodb+srv://kseniyamua:LDl8vCjuJrLOutn6@cluster0.lyi9jwh.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0')
-.then(() => console.log('DB ok'))
-.catch((err) => console.log('DB error', err));
+  .connect(process.env.MONGO_URL)
+  .then(() => console.log('DB ok'))
+  .catch((err) => console.log('DB error', err));
 
 const app = express();
 
