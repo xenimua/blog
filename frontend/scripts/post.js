@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   
     try {
-      const res = await fetch(`http://localhost:4444/posts/${postId}`);
+      const res = await fetch(`https://blog-backend-ww83.onrender.com/posts/${postId}`);
       const post = await res.json();
   
       // Заполняем содержимое

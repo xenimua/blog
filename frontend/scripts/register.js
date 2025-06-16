@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const password = document.getElementById('password').value;
 
     try {
-      const res = await fetch('http://localhost:4444/auth/register', {
+      const res = await fetch('https://blog-backend-ww83.onrender.com/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

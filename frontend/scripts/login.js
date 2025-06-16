@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const password = loginForm.password.value;
 
     try {
-      const res = await fetch('http://localhost:4444/auth/login', {
+      const res = await fetch('https://blog-backend-ww83.onrender.com/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

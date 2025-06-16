@@ -6,12 +6,12 @@ if (token) {
   addPostBtn.style.display = 'inline-block';
 }
 
-fetch('http://localhost:4444/posts')
+fetch('https://blog-backend-ww83.onrender.com/posts')
   .then((res) => res.json())
   .then((posts) => {
     blogList.innerHTML = posts
       .map((post) => {
-        const img = post.imageUrl ? `http://localhost:4444${post.imageUrl}` : 'image-1.jpg';
+        const img = post.imageUrl ? `https://blog-backend-ww83.onrender.com${post.imageUrl}` : 'image-1.jpg';
         return `
           <a href="post.html?id=${post._id}" class="blog-card">
             <div class="blog-card__image">

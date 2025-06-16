@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       formData.append('image', file);
   
       try {
-        const res = await fetch('http://localhost:4444/upload', {
+        const res = await fetch('https://blog-backend-ww83.onrender.com/upload', {
           method: 'POST',
           headers: { Authorization: `Bearer ${token}` },
           body: formData
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
         const data = await res.json();
         imageUrl = data.url;
-        previewImg.src = `http://localhost:4444${imageUrl}`;
+        previewImg.src = `https://blog-backend-ww83.onrender.com${imageUrl}`;
         previewImg.style.display = 'block';
         removeBtn.style.display = 'inline-block';
       } catch (err) {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const text = form.text.value;
   
       try {
-        const res = await fetch('http://localhost:4444/posts', {
+        const res = await fetch('https://blog-backend-ww83.onrender.com/posts', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
