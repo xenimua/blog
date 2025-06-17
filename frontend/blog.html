@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Future Tech | Blog</title>
+  <title>Блог | Xpage</title>
   <link rel="stylesheet" href="./styles/main.css" />
   <script src="./scripts/main.js" type="module"></script>
 </head>
@@ -76,13 +76,26 @@
     </div>
   </header>
 
-  <main class="section section__header">
+  <main>
+    <section class="hero-alt" aria-labelledby="news-title">
+      <header class="hero-alt__header">
+        <div class="hero-alt__header-inner container">
+          <h1 class="hero-alt__title" id="news-title">
+            Блог: Оставайтесь всегда <span class="hero-alt__title-hidden-part">в курсе событий</span>
+          </h1>
+          <p class="hero-alt__subtitle h1 hidden-mobile" aria-hidden="true">
+            в курсе событий
+          </p>
+          <p class="hero-alt__description">Изучите последние новости со всего мира. Мы предоставляем вам самую свежую информацию о наиболее значимых событиях, тенденциях и историях. </p>
+        </div>
+      </header>
+    </section>
+
     <div class="container">
-      <div class="section__heading">
-        <h1 class="h2">Блог</h1>
-        <a id="addPostBtn" href="add-post.html" class="button button--accent" style="display: none;">
-          + Добавить пост
-        </a>
+      <div class="blog-details__news news container">
+        <ul class="news__list">
+      
+        </ul>
       </div>
 
       <div id="blogList" class="blog-list"></div>
@@ -271,3 +284,4 @@
 </body>
 </html>
 <script type="module" src="./scripts/auth.js"></script>
+<script type="module" src="./scripts/blog.js"></script>
