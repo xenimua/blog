@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
   const newsList = document.querySelector('.news__list');
 
   const posts = [
@@ -89,4 +89,4 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     newsList.appendChild(li);
   });
-});
+}); */
