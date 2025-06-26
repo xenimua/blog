@@ -31,6 +31,7 @@ const upload = multer({ storage });
 app.use(express.json());
 app.use(cors());
 app.use('/uploads', express.static('uploads'));
+app.use(express.urlencoded({ extended: true }));
 
 app.post('/submit-contact', submitContactForm); // Новый маршрут для обработки формы
 
