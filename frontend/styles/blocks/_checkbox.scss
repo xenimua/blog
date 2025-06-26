@@ -26,7 +26,7 @@
 
     appearance: none;
     margin: 0;
-    background-color: var(--color-dark-10);
+    background-color: var(--color-dark);
     border: var(--border);
     border-radius: rem(4);
 
@@ -46,7 +46,7 @@
 
     &::after {
       content: '✔';
-      color: var(--color-dark);
+      color: var(--color-dark-10);
       transition-duration: var(--transition-duration);
     }
   }

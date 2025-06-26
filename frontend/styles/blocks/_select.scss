@@ -51,7 +51,7 @@
 
       content: '';
       background:
-        url('../../icons/arrow-down_white.svg')
+        url('../icons/arrow-down_white.svg')
         center/contain no-repeat;
       transition-duration: var(--transition-duration);
 
@@ -71,7 +71,7 @@
     max-height: rem(250);
     overflow-y: auto;
     padding: rem(4);
-    background-color: var(--color-dark-10);
+    background-color: var(--color-dark);
     border: var(--border);
     border-radius: rem(6);
     transition-duration: var(--transition-duration);

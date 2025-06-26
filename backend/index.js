@@ -8,6 +8,7 @@ import mongoose from 'mongoose';
 import { registerValidation, loginValidation, postCreateValidation } from './validations.js';
 import { handleValidationErrors, checkAuth } from './utils/index.js';
 import { UserController, PostController } from './controllers/index.js';
+import { submitContactForm } from './controllers/contactController.js';
 
 mongoose
   .connect(process.env.MONGO_URL)
@@ -30,6 +31,8 @@ const upload = multer({ storage });
 app.use(express.json());
 app.use(cors());
 app.use('/uploads', express.static('uploads'));
+
+app.post('/submit-contact', submitContactForm); // Новый маршрут для обработки формы
 
 app.post('/auth/login', loginValidation, handleValidationErrors, UserController.login);
 app.post('/auth/register', registerValidation, handleValidationErrors, UserController.register);

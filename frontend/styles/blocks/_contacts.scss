@@ -5,3 +5,12 @@
     border-bottom: var(--border);
   }
 }
+
+.feedback-form__success-message {
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}

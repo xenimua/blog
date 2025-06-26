@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Статья</title>
   <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="icon" href="/frontend/images/favicon.ico" type="image/x-icon">
+  <script src="./scripts/main.js" type="module"></script>
 </head>
+
 <body>
+  <header class="header" data-js-header>
+    <div class="header__body">
+      <div class="header__body-inner container">
+        <a
+          class="header__logo logo"
+          href="./index.html"
+          aria-label="Home"
+          title="Home"
+        >
+          <img
+            class="logo__image"
+            src="./images/logo.svg"
+            alt=""
+            width="104" height="26"
+          />
+        </a>
+        <a class="header__contact-us-link button button--accent" href="./login.html">
+          Войти
+        </a>
+      </div>
+      <!-- <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button> -->
+    </div>
+  </header>
+
   <main class="section">
     <div class="container">
       <div class="blog-details tile">
@@ -73,6 +112,174 @@
       </div>
     </div>
   </main>
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__body">
+        <nav class="footer__menu">
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="./index.html">Главная</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./index.html#1">Описание</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./index.html#2">Блог</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./index.html#3">Ресурсы</a>
+                <span class="badge">New</span>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./index.html#4">Отзывы</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./contacts.html">Контакты</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./contacts.html">Подписаться</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="./news.html">Новости</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./news.html">В тренде</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./news.html#1">Популярные видео</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./news.html#2">Технологии</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./news.html#2">Здоровье</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./news.html#2">Политика</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./news.html#2">Экология</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="./blog.html">Блог</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./blog.html">Квантовые вычисления</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./blog.html">AI Этика</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./blog.html">Исследование космоса</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./blog.html">Биотехнологии</a>
+                <span class="badge">New</span>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./blog.html">Возобновляемая энергия</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="./podcasts.html">Подкасты</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./podcasts.html#1">AI Революция</a>
+                <span class="badge">New</span>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./podcasts.html#1">AI Беседы</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./podcasts.html#3">Последние эпизоды</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="./resources.html">Ресурсы</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link button" href="./resources.html#1">
+                  <span class="icon icon--yellow-arrow">Исследования</span>
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link button" href="./resources.html#1">
+                  <span class="icon icon--yellow-arrow">Электронные книги</span>
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link button" href="./resources.html#1">
+                  <span class="icon icon--yellow-arrow">Научные работы</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__extra">
+        <div class="footer__extra-menu">
+          <ul class="footer__extra-menu-list">
+            <li class="footer__extra-menu-item">
+              <a class="footer__extra-menu-link" href="https://www.xpage.ru/upload/iblock/042/qp5qkt3fla5s50fus6ofmix1luahzmkh/politica.pdf" target="_blank">Условия и положения</a>
+            </li>
+            <li class="footer__extra-menu-item">
+              <a class="footer__extra-menu-link" href="https://www.xpage.ru/upload/iblock/042/qp5qkt3fla5s50fus6ofmix1luahzmkh/politica.pdf" target="_blank">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__soc1als soc1als">
+          <ul class="soc1als__list">
+            <li class="soc1als__item">
+              <a
+                class="soc1als__link"
+                href="https://t.me/xpage_IT" target="_blank"
+                target="_blank"
+                aria-label="Telegram"
+                title="Telegram"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.4025 2.17876L0.676014 10.8468C0.521921 10.9088 0.390564 11.0184 0.30031 11.1605C0.210056 11.3026 0.165418 11.47 0.172629 11.6393C0.17984 11.8086 0.238538 11.9714 0.340527 12.1049C0.442516 12.2384 0.582698 12.3359 0.741469 12.3838L6.26149 14.0639L8.32113 20.766C8.37009 20.9259 8.45862 21.07 8.57823 21.1844C8.6978 21.2987 8.84424 21.3795 9.00338 21.4186C9.16248 21.4578 9.32873 21.4541 9.48604 21.4078C9.64331 21.3615 9.78617 21.2744 9.90076 21.1547L12.7589 18.1701L18.3575 22.379C18.5152 22.4977 18.6995 22.5739 18.8935 22.6007C19.0874 22.6275 19.2849 22.6041 19.4677 22.5325C19.6505 22.4609 19.8128 22.3435 19.9398 22.191C20.0669 22.0385 20.1544 21.8558 20.1946 21.6596L23.8993 3.50131C23.9403 3.29989 23.9275 3.09088 23.8622 2.89629C23.7969 2.7017 23.6817 2.52874 23.5284 2.39563C23.3752 2.26253 23.1897 2.1742 22.9916 2.13997C22.7934 2.10573 22.59 2.12686 22.4025 2.20111V2.17876ZM19.6797 6.20004L9.59967 15.3462C9.49874 15.4366 9.43486 15.5627 9.42072 15.6992L9.03236 19.2379C9.02747 19.2621 9.01464 19.2837 8.99596 19.2993C8.97724 19.3149 8.9539 19.3234 8.92981 19.3234C8.90577 19.3234 8.88242 19.3149 8.86375 19.2993C8.84507 19.2837 8.8322 19.2621 8.82726 19.2379L7.23022 13.9656C7.19448 13.8479 7.1978 13.7214 7.23964 13.6058C7.28149 13.4902 7.35947 13.3921 7.46149 13.3267L19.3786 5.76217C19.4364 5.71952 19.5085 5.70213 19.5788 5.71386C19.6492 5.72559 19.7122 5.76547 19.7539 5.82472C19.7955 5.88397 19.8125 5.95774 19.801 6.0298C19.7895 6.10186 19.7506 6.16633 19.6928 6.20898L19.6797 6.20004Z" fill="#1A1A1A"/>
+                </svg>
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a
+                class="soc1als__link"
+                href="https://wa.me/79043000763" target="_blank"
+                target="_blank"
+                aria-label="WhatsApp"
+                title="WhatsApp"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4048 9.24927C22.8019 6.6768 21.3472 4.38361 19.2769 2.74199C17.2065 1.10037 14.6422 0.206705 12 0.206055C11.2494 0.222866 10.5014 0.299913 9.76315 0.436454C7.96253 0.790543 6.27053 1.56348 4.824 2.69274C3.37747 3.82201 2.21706 5.27587 1.43661 6.93677C0.656167 8.59767 0.277608 10.419 0.33156 12.2533C0.385512 14.0876 0.870458 15.8835 1.74717 17.4957C1.8036 17.5792 1.84211 17.6735 1.86029 17.7726C1.87846 17.8717 1.8759 17.9736 1.85275 18.0717C1.30555 19.8573 0.801564 21.7053 0.316765 23.5101C0.235165 23.8317 0.235162 23.8317 0.537559 23.7453C2.45756 23.2317 4.31516 22.7469 6.21115 22.3053C6.27691 22.2731 6.34915 22.2563 6.42235 22.2563C6.4956 22.2563 6.56784 22.2731 6.63355 22.3053C8.62099 23.3364 10.8624 23.7764 13.0921 23.5729C15.3218 23.3694 17.4466 22.531 19.2145 21.1571C20.9824 19.7832 22.3194 17.9313 23.0672 15.8208C23.815 13.7103 23.9421 11.4298 23.4336 9.24927H23.4048ZM13.632 21.4989C13.1891 21.605 12.7328 21.6439 12.2784 21.6141C10.4283 21.6592 8.6016 21.1942 6.99835 20.2701C6.91579 20.2043 6.81787 20.1605 6.71376 20.1429C6.60965 20.1252 6.5028 20.1343 6.40315 20.1693C5.34235 20.4333 4.31037 20.7117 3.25917 20.9805C3.04317 21.0525 3.02396 21.0141 3.07196 20.7885C3.35036 19.8285 3.60956 18.8349 3.91676 17.8317C3.95718 17.7155 3.96691 17.5908 3.94505 17.4697C3.92319 17.3486 3.87046 17.2352 3.79196 17.1405C2.74516 15.5 2.21809 13.5817 2.27976 11.6366C2.34142 9.69159 2.98894 7.81051 4.13756 6.23967C6.61435 2.93726 10.008 1.56446 14.0448 2.42846C18.0816 3.29246 20.5728 5.85567 21.4752 9.81087C21.7721 11.0964 21.8022 12.4292 21.5634 13.7268C21.3246 15.0244 20.822 16.2592 20.0868 17.3548C19.3516 18.4504 18.3995 19.3835 17.2892 20.0963C16.1789 20.8091 14.9341 21.2864 13.632 21.4989Z" fill="#1A1A1A"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.048 17.4961C14.636 17.5217 14.2231 17.4646 13.8336 17.3281C11.2543 16.5429 9.01955 14.9023 7.49761 12.6769C6.8331 11.8783 6.36611 10.9344 6.13441 9.92167C6.00827 9.3533 6.03999 8.76131 6.22614 8.20965C6.41228 7.65803 6.74569 7.16781 7.19041 6.79207C7.41659 6.63947 7.67358 6.53848 7.94315 6.49615C8.21271 6.45386 8.48833 6.47128 8.75041 6.54727C8.85337 6.64307 8.94227 6.75295 9.01441 6.87367C9.34561 7.69927 9.70081 8.47207 10.0368 9.27367C10.0603 9.3532 10.0678 9.43658 10.0587 9.51899C10.0496 9.60141 10.0242 9.68119 9.98396 9.75367C9.78937 10.1041 9.54884 10.4269 9.26881 10.7137C9.21937 10.7493 9.17795 10.795 9.14718 10.8476C9.11641 10.9002 9.09702 10.9588 9.09025 11.0193C9.08348 11.0799 9.08943 11.1412 9.10782 11.1994C9.12615 11.2575 9.15644 11.3112 9.19681 11.3569C10.0936 12.928 11.5063 14.1406 13.1952 14.7889C13.2937 14.8465 13.4103 14.8647 13.5216 14.8397C13.633 14.8148 13.7307 14.7486 13.7952 14.6545C14.0976 14.3137 14.3904 13.9345 14.6688 13.5649C14.7384 13.4621 14.8431 13.3882 14.9634 13.3573C15.0836 13.3263 15.211 13.3404 15.3216 13.3969C15.8976 13.6657 16.4592 13.9345 17.0064 14.1841C17.16 14.2561 17.2704 14.3185 17.4048 14.3665C17.9808 14.6545 17.9808 14.6977 17.9136 15.3265C17.8368 16.5457 16.9008 17.1649 15.8256 17.4721C15.5703 17.5299 15.3063 17.538 15.048 17.4961Z" fill="#1A1A1A"/>
+                </svg>
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a
+                class="soc1als__link"
+                href="https://vk.com/xpageru" target="_blank"
+                target="_blank"
+                aria-label="VK"
+                title="VK"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.68707 1.68707C0 3.37413 0 6.0894 0 11.52V12.48C0 17.9106 0 20.6259 1.68707 22.313C3.37413 24 6.0894 24 11.52 24H12.48C17.9106 24 20.6259 24 22.313 22.313C24 20.6259 24 17.9106 24 12.48V11.52C24 6.0894 24 3.37413 22.313 1.68707C20.6259 0 17.9106 0 12.48 0H11.52C6.0894 0 3.37413 0 1.68707 1.68707ZM4.0498 7.2998C4.1798 13.5398 7.29976 17.2898 12.7698 17.2898H13.0799V13.7198C15.0899 13.9198 16.6097 15.3898 17.2197 17.2898H20.0598C19.2798 14.4498 17.2297 12.8798 15.9497 12.2798C17.2297 11.5398 19.0297 9.7398 19.4597 7.2998H16.8797C16.3197 9.2798 14.6599 11.0798 13.0799 11.2498V7.2998H10.4998V14.2198C8.89975 13.8198 6.8798 11.8798 6.7898 7.2998H4.0498Z" fill="#1A1A1A"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">© <time datetime="2025">2025</time> Xpage. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
 

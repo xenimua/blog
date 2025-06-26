@@ -5,15 +5,17 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Xpage | Главная</title>
+  <title>Главная | Xpage</title>
   <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="icon" href="/frontend/images/favicon.ico" type="image/x-icon">
   <script src="./scripts/main.js" type="module"></script>
 </head>
+
 <body>
   <header class="header" data-js-header>
     <div class="header__promo">
       <div class="header__promo-inner container">
-        <a class="header__promo-link" href="/">
+        <a class="header__promo-link" href="./contacts.html">
           <span class="icon icon--yellow-arrow">Подпишитесь на нашу рассылку, чтобы узнавать первыми о наших новостях</span>
         </a>
       </div>
@@ -22,7 +24,7 @@
       <div class="header__body-inner container">
         <a
           class="header__logo logo"
-          href="/"
+          href="./index.html"
           aria-label="Home"
           title="Home"
         >
@@ -54,7 +56,7 @@
             </ul>
           </nav>
           <a class="header__contact-us-link button button--accent" href="./contacts.html">
-            Оставить заявку
+            Связаться с нами
           </a>
         </div>
         <button
@@ -179,14 +181,14 @@
                 <h3 class="advantage-card__title h6">Глобальная аудитория</h3>
                 <p class="advantage-card__subtitle">Мировое влияние</p>
               </a>
-              <p class="advantage-card__details">2 миллиона читателей в месяц</p>
+              <p class="advantage-card__details">200 тысяч читателей в месяц</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="features-title">
+    <section class="section" aria-labelledby="features-title" id="1">
       <header class="section__header">
         <div class="section__header-inner container">
           <div class="section__header-info">
@@ -281,7 +283,7 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="blog-title">
+    <section class="section" aria-labelledby="blog-title" id="2">
       <header class="section__header">
         <div class="section__header-inner container">
           <div class="section__header-info">
@@ -669,7 +671,7 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="resources-title">
+    <section class="section" aria-labelledby="resources-title" id="3">
       <header class="section__header">
         <div class="section__header-inner container">
           <div class="section__header-info">
@@ -873,7 +875,7 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="reviews-title">
+    <section class="section" aria-labelledby="reviews-title" id="4">
       <header class="section__header">
         <div class="section__header-inner container">
           <div class="section__header-info">
@@ -1139,114 +1141,103 @@
       <div class="footer__body">
         <nav class="footer__menu">
           <div class="footer__menu-column">
-            <a class="footer__menu-main-link h7" href="/">Главная</a>
+            <a class="footer__menu-main-link h7" href="./index.html">Главная</a>
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Описание</a>
+                <a class="footer__menu-link" href="./index.html#1">Описание</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Блог</a>
+                <a class="footer__menu-link" href="./index.html#2">Блог</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Ресурсы</a>
+                <a class="footer__menu-link" href="./index.html#3">Ресурсы</a>
                 <span class="badge">New</span>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Отзывы</a>
+                <a class="footer__menu-link" href="./index.html#4">Отзывы</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Контакты</a>
+                <a class="footer__menu-link" href="./contacts.html">Контакты</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Подписаться</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__menu-column">
-            <a class="footer__menu-main-link h7" href="/">Новости</a>
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">В тренде</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Видеоролики</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Технологии</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Здоровье</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Политика</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Экология</a>
+                <a class="footer__menu-link" href="./contacts.html">Подписаться</a>
               </li>
             </ul>
           </div>
           <div class="footer__menu-column">
-            <a class="footer__menu-main-link h7" href="/">Блог</a>
+            <a class="footer__menu-main-link h7" href="./news.html">Новости</a>
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Квантовые вычисления</a>
+                <a class="footer__menu-link" href="./news.html">В тренде</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">AI Этика</a>
+                <a class="footer__menu-link" href="./news.html#1">Популярные видео</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Исследование космоса</a>
+                <a class="footer__menu-link" href="./news.html#2">Технологии</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Биотехнологии</a>
+                <a class="footer__menu-link" href="./news.html#2">Здоровье</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./news.html#2">Политика</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./news.html#2">Экология</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-main-link h7" href="./blog.html">Блог</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./blog.html">Квантовые вычисления</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./blog.html">AI Этика</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./blog.html">Исследование космоса</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./blog.html">Биотехнологии</a>
                 <span class="badge">New</span>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Возобновляемая энергия</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">Биохакинг</a>
+                <a class="footer__menu-link" href="./blog.html">Возобновляемая энергия</a>
               </li>
             </ul>
           </div>
           <div class="footer__menu-column">
-            <a class="footer__menu-main-link h7" href="/">Подкасты</a>
+            <a class="footer__menu-main-link h7" href="./podcasts.html">Подкасты</a>
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">AI Революция</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">AI Революция</a>
+                <a class="footer__menu-link" href="./podcasts.html#1">AI Революция</a>
                 <span class="badge">New</span>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">TechTalk AI</a>
+                <a class="footer__menu-link" href="./podcasts.html#1">AI Беседы</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="/">AI Беседы</a>
+                <a class="footer__menu-link" href="./podcasts.html#3">Последние эпизоды</a>
               </li>
             </ul>
           </div>
           <div class="footer__menu-column">
-            <a class="footer__menu-main-link h7" href="/">Ресурсы</a>
+            <a class="footer__menu-main-link h7" href="./resources.html">Ресурсы</a>
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
-                <a class="footer__menu-link button" href="/">
-                  <span class="icon icon--yellow-arrow">Белая книга</span>
+                <a class="footer__menu-link button" href="./resources.html#1">
+                  <span class="icon icon--yellow-arrow">Исследования</span>
                 </a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link button" href="/">
+                <a class="footer__menu-link button" href="./resources.html#1">
                   <span class="icon icon--yellow-arrow">Электронные книги</span>
                 </a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link button" href="/">
-                  <span class="icon icon--yellow-arrow">Доклады</span>
-                </a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link button" href="/">
+                <a class="footer__menu-link button" href="./resources.html#1">
                   <span class="icon icon--yellow-arrow">Научные работы</span>
                 </a>
               </li>
@@ -1258,10 +1249,10 @@
         <div class="footer__extra-menu">
           <ul class="footer__extra-menu-list">
             <li class="footer__extra-menu-item">
-              <a class="footer__extra-menu-link" href="/">Условия и положения</a>
+              <a class="footer__extra-menu-link" href="https://www.xpage.ru/upload/iblock/042/qp5qkt3fla5s50fus6ofmix1luahzmkh/politica.pdf" target="_blank">Условия и положения</a>
             </li>
             <li class="footer__extra-menu-item">
-              <a class="footer__extra-menu-link" href="/">Политика конфиденциальности</a>
+              <a class="footer__extra-menu-link" href="https://www.xpage.ru/upload/iblock/042/qp5qkt3fla5s50fus6ofmix1luahzmkh/politica.pdf" target="_blank">Политика конфиденциальности</a>
             </li>
           </ul>
         </div>
@@ -1270,7 +1261,7 @@
             <li class="soc1als__item">
               <a
                 class="soc1als__link"
-                href="/"
+                href="https://t.me/xpage_IT" target="_blank"
                 target="_blank"
                 aria-label="Telegram"
                 title="Telegram"
@@ -1283,7 +1274,7 @@
             <li class="soc1als__item">
               <a
                 class="soc1als__link"
-                href="/"
+                href="https://wa.me/79043000763" target="_blank"
                 target="_blank"
                 aria-label="WhatsApp"
                 title="WhatsApp"
@@ -1297,7 +1288,7 @@
             <li class="soc1als__item">
               <a
                 class="soc1als__link"
-                href="/"
+                href="https://vk.com/xpageru" target="_blank"
                 target="_blank"
                 aria-label="VK"
                 title="VK"
