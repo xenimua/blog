@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
   const loginForm = document.querySelector('#login-form');
 
   loginForm.addEventListener('submit', async (e) => {
@@ -25,6 +25,34 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } catch (err) {
       alert('Ошибка соединения с сервером');
+    }
+  });
+}); */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('loginForm');
+  
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    // Проверяем, существует ли такой пользователь в localStorage
+    const user = JSON.parse(localStorage.getItem(email));
+
+    if (!user) {
+      alert('Пользователь не найден');
+      return;
+    }
+
+    // Проверка пароля
+    if (user.password === password) {
+      alert('Вход успешен');
+      // Можно перенаправить на страницу личного кабинета, например:
+      window.location.href = 'profile.html'; // Личный кабинет
+    } else {
+      alert('Неверный пароль');
     }
   });
 });

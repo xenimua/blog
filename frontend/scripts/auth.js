@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
   const token = localStorage.getItem('token');
   const user = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null;
 
@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
-});
+}); */
 
 

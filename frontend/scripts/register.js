@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('registerForm');
   
   form.addEventListener('submit', async (e) => {
@@ -29,6 +29,36 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (err) {
       alert('Ошибка запроса: ' + err.message);
     }
+  });
+}); */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('registerForm');
+  
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    // Проверка на существование пользователя с таким email
+    const existingUser = localStorage.getItem(email);
+    if (existingUser) {
+      alert('Пользователь с таким email уже существует');
+      return;
+    }
+
+    // Сохраняем данные пользователя в localStorage
+    const user = {
+      fullName,
+      email,
+      password,
+    };
+    localStorage.setItem(email, JSON.stringify(user)); // Сохраняем по ключу email
+
+    alert('Регистрация прошла успешно');
+    window.location.href = 'login.html'; // Перенаправляем на страницу входа
   });
 });
 

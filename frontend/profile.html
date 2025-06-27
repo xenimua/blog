@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный Кабинет</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header class="header">
+      <div class="header__body-inner container">
+        <a href="index.html" class="logo">
+          <img src="./images/logo.svg" alt="Логотип" width="104" height="26">
+        </a>
+        <a href="login.html" class="button button--accent">Выход</a>
+      </div>
+    </header>
+  
+
+    <main class="container">
+        <section class="tile" style="max-width: 480px; margin: 0 auto;">
+          <h1 class="h3" style="text-align: center; margin-bottom: 2rem;">Мой профиль</h1>
+          <form id="profileForm" class="feedback-form">
+            <div class="feedback-form__cell field">
+              <label class="field__label" for="fullName">Имя</label>
+              <input id="fullName" class="field__control" placeholder="Введите имя" required />
+            </div>
+            <div class="feedback-form__cell field">
+              <label class="field__label" for="avatar">Аватар</label>
+              <input type="file" id="avatar" class="field__control" accept="image/*" />
+            </div>
+            <div class="feedback-form__cell field" style="text-align: center;">
+              <img id="previewAvatar" src="" alt="Аватар" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;" />
+            </div>
+            <div class="feedback-form__cell--wide">
+              <button type="submit" class="button button--accent" style="width: 100%;">Сохранить</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    
+      <script src="./scripts/profile.js"></script>
+    </body>
+</html>
